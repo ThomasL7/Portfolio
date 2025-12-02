@@ -1,0 +1,143 @@
+.header-intro {
+  animation: header-intro var(--header-animation-duration) cubic-bezier(0.46, 0.01, 0.67, 0.86) 0s 1 normal forwards;
+}
+
+@keyframes header-intro {
+  0% {
+    filter: blur(8px);
+  }
+  100% {
+    filter: none;
+  }
+}
+
+.elements-header-intro {
+  animation: elements-header-intro var(--header-animation-duration) ease-out 0s 1 normal forwards;
+}
+
+@keyframes elements-header-intro {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.header-title-block-hover-default {
+  cursor: default;
+}
+
+@media (hover: hover) {
+  .header-title-block-hover {
+    cursor: pointer;
+  }
+}
+
+.header-title-image-hover {
+  animation: header-title-image-hover 0.525s ease-in 0s infinite alternate none;
+}
+
+@keyframes header-title-image-hover {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.12;
+  }
+}
+
+.header-title-hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.205);
+  animation: header-title-hover 0.525s ease-in 0s infinite alternate none;
+}
+
+@keyframes header-title-hover {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.12;
+  }
+}
+
+.nav-link-active {
+  color: var(--black);
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0px 3px 10px rgba(238, 238, 238, 0.2);
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .nav-link-hover:hover {
+    cursor: pointer;
+    background-color: rgb(241, 241, 241);
+
+    animation: nav-link-hover 0.5s ease-in-out 0s infinite alternate none;
+  }
+}
+
+@keyframes nav-link-hover {
+  0% {
+    background-color: var(--header-footer-color);
+    color: var(--white);
+  }
+  100% {
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 3px 10px rgba(238, 238, 238, 0.2);
+    color: var(--black);
+  }
+}
+
+/* Mobile */
+@media (max-height: 590px), (max-width: 768px) {
+  .mobile-nav-open {
+    transform: scaleY(1);
+    animation: mobile-nav-open 0.25s ease-in-out 0s 1 normal none;
+    transform-origin: top;
+  }
+
+  .mobile-nav-close {
+    transform: scaleY(1);
+    animation: mobile-nav-close 0.22s ease-in-out 0s 1 normal none;
+    transform-origin: top;
+  }
+
+  .nav-link-active {
+    background-color: rgb(34, 34, 34);
+    box-shadow: none;
+    opacity: 1;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  @media (hover: hover) {
+    .nav-link-hover:hover {
+      cursor: pointer;
+      background-color: rgb(34, 34, 34);
+      box-shadow: none;
+      animation: nav-link-hover 0.58s ease-in-out 0s infinite alternate none;
+      color: var(--white);
+    }
+  }
+}
+
+@keyframes mobile-nav-open {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes mobile-nav-close {
+  0% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}

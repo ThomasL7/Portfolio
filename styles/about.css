@@ -1,0 +1,99 @@
+#about-content {
+  z-index: 1;
+  width: var(--slide-max-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-height: calc(100% - 2 * var(--slide-bands-height));
+  margin: var(--slide-bands-height) var(--slide-side-margin);
+}
+
+#about-block-photo {
+  transform: rotate(-5deg);
+  width: 240px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(circle at center, rgb(218, 215, 215) 65%, rgb(207, 204, 204) 85%, rgb(134, 131, 131) 100%);
+  border-radius: 10px;
+  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.25);
+  margin-left: 20px;
+  margin-right: 145px;
+  border: 1px solid rgb(124, 124, 124);
+}
+
+#about-block-photo img {
+  margin-top: 5%;
+  object-fit: cover;
+  width: 90%;
+  height: 81%;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid rgb(185, 185, 185);
+}
+
+#about-text {
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.123) 0%, rgba(255, 255, 255, 0.075) 100%);
+  max-height: 72%;
+  position: relative;
+}
+
+#about-text-p::-webkit-scrollbar {
+  display: none;
+}
+
+#about-text h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#about-text h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--white);
+}
+
+#about-text-p {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+#about-text p {
+  height: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: justify;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+#about-text-p div {
+  display: block;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 22px;
+  line-height: 1.2;
+}
+
+#about-text-p div:last-child {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,277 @@
+@media (max-width: 1440px) {
+  #skills-trees {
+    margin-right: -25px;
+    width: 90%;
+  }
+
+  #skills-tree-left,
+  #skills-tree-center,
+  #skills-tree-right {
+    margin-right: 25px;
+    padding: 30px 12px 35px 12px;
+  }
+
+  #skills-trees h3 {
+    font-size: 23px;
+    margin-bottom: 32px;
+  }
+
+  .skills-items-div img {
+    height: 36px;
+  }
+
+  .skills-items-div h4 {
+    font-size: 18px;
+  }
+
+  #skills-content > p {
+    font-size: 22px;
+    margin-top: 50px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #skills-content .slide-title-style {
+    margin-bottom: 48px;
+  }
+
+  #skills-trees {
+    margin-right: -22px;
+    width: 95%;
+  }
+
+  #skills-tree-left,
+  #skills-tree-center,
+  #skills-tree-right {
+    margin-right: 22px;
+    padding: 25px 12px 30px 12px;
+  }
+
+  #skills-trees h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  #skills-trees ul {
+    margin-bottom: -25px;
+    margin-right: -20px;
+  }
+
+  #skills-trees li {
+    margin-bottom: 25px;
+    margin-right: 20px;
+  }
+
+  .skills-items-div img {
+    height: 36px;
+  }
+
+  .skills-items-div h4 {
+    font-size: 15px;
+  }
+
+  #skills-content > p {
+    font-size: 20px;
+    margin-top: 38px;
+    width: 50%;
+  }
+}
+
+@media (max-height: 815px) {
+  #skills-content .slide-title-style {
+    margin-bottom: 18px;
+    top: -18px;
+  }
+
+  #skills-content > p {
+    margin-top: 30px;
+  }
+}
+
+@media (max-height: 768px) {
+  #skills-content .slide-title-style {
+    margin-bottom: 22px;
+    top: -18px;
+  }
+
+  #skills-trees {
+    width: 92%;
+  }
+
+  #skills-trees h3 {
+    font-size: 21px;
+    margin-bottom: 26px;
+  }
+
+  #skills-trees ul {
+    margin-bottom: -24px;
+    margin-right: -18px;
+  }
+
+  #skills-trees li {
+    margin-bottom: 24px;
+    margin-right: 18px;
+  }
+
+  .skills-items-div img {
+    height: 34px;
+  }
+
+  .skills-items-div h4 {
+    font-size: 16px;
+  }
+
+  #skills-content > p {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 70%;
+  }
+}
+
+@media (max-height: 768px) and (max-width: 815px) {
+  #skills-content .slide-title-style {
+    margin-bottom: 4px;
+  }
+
+  #skills-content > p {
+    font-size: 18px;
+    margin-top: 14px;
+  }
+}
+
+@media (max-height: 730px) and (max-width: 815px) {
+  #skills-content .slide-title-style {
+    margin-bottom: 0px;
+  }
+
+  #skills-content > p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-height: 700px) {
+  #skills-content .slide-title-style {
+    margin-bottom: 8px;
+    top: -18px;
+  }
+
+  #skills-trees {
+    width: 95%;
+  }
+
+  #skills-tree-left,
+  #skills-tree-center,
+  #skills-tree-right {
+    padding: 20px 12px 24px 12px;
+  }
+
+  #skills-trees h3 {
+    font-size: 21px;
+    margin-bottom: 25px;
+  }
+
+  #skills-trees ul {
+    margin-bottom: -18px;
+    margin-right: -18px;
+  }
+
+  #skills-trees li {
+    margin-bottom: 18px;
+    margin-right: 18px;
+  }
+
+  .skills-items-div img {
+    height: 33px;
+  }
+
+  .skills-items-div h4 {
+    font-size: 15px;
+  }
+
+  #skills-content > p {
+    font-size: 19px;
+    margin-top: 22px;
+    width: 65%;
+  }
+}
+
+@media (max-height: 650px) {
+  #skills-content .slide-title-style {
+    margin-bottom: 4px;
+  }
+
+  #skills-content > p {
+    font-size: 18px;
+    margin-top: 14px;
+  }
+}
+
+@media (max-height: 590px), (max-width: 768px) {
+  #skills-content {
+    margin-top: 15px;
+  }
+
+  #skills-trees {
+    margin-right: 0px;
+  }
+
+  #skills-content .slide-title-style {
+    margin-bottom: 47px;
+    margin-top: 85px;
+    padding: 16px 30px;
+    top: 0px;
+  }
+
+  #skills-trees {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 92.6%;
+  }
+
+  #skills-tree-left,
+  #skills-tree-center,
+  #skills-tree-right {
+    margin-right: 0px;
+    padding: 30px 12px 32px 12px;
+  }
+
+  #skills-tree-left,
+  #skills-tree-center {
+    margin-bottom: 30px;
+  }
+
+  #skills-trees h3 {
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 32px;
+  }
+
+  #skills-trees ul {
+    margin-bottom: -26px;
+    margin-right: -20px;
+  }
+
+  #skills-trees li {
+    margin-bottom: 26px;
+    margin-right: 20px;
+  }
+
+  .skills-items-div img {
+    height: 35px;
+  }
+
+  .skills-items-div h4 {
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  #skills-content > p {
+    font-size: 19px;
+    margin-bottom: 95px;
+    margin-top: 35px;
+    width: 93%;
+  }
+}

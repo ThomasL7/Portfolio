@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="fr" style="overflow-y: hidden;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Thomas LÉGER - Développeur Web Junior</title>
+  <meta name="description" content="Passionné par le développement web, j'apprécie particulièrement l'aspect d'apprentissage continu qu'offre cet univers en perpétuelle évolution. Chaque jour étant une opportunité d'explorer de nouveaux langages, frameworks et bibliothèques. Je trouve également une grande satisfaction à concevoir et optimiser des applications. La combinaison de créativité, de logique et de rigueur qu'exige ce domaine nourrit ma motivation, me permettant d’aborder chaque défi avec ardeur et de mener à bien mes missions avec efficacité.">
+  <link rel="icon" href="./favicon.ico">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/skills.css">
+  <link rel="stylesheet" href="./styles/info-bubbles.css">
+  <link rel="stylesheet" href="./styles/examples.css">
+  <link rel="stylesheet" href="./styles/modal.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+
+  <link rel="stylesheet" href="./styles/general-mq.css">
+  <link rel="stylesheet" href="./styles/header-mq.css">
+  <link rel="stylesheet" href="./styles/home-mq.css">
+  <link rel="stylesheet" href="./styles/about-mq.css">
+  <link rel="stylesheet" href="./styles/skills-mq.css">
+  <link rel="stylesheet" href="./styles/info-bubbles-mq.css">
+  <link rel="stylesheet" href="./styles/examples-mq.css">
+  <link rel="stylesheet" href="./styles/modal-mq.css">
+  <link rel="stylesheet" href="./styles/contact-mq.css">
+  <link rel="stylesheet" href="./styles/footer-mq.css">
+
+  <link rel="stylesheet" href="./styles/general-animations.css">
+  <link rel="stylesheet" href="./styles/header-animations.css">
+  <link rel="stylesheet" href="./styles/home-animations.css">
+  <link rel="stylesheet" href="./styles/about-animations.css">
+  <link rel="stylesheet" href="./styles/skills-animations.css">
+  <link rel="stylesheet" href="./styles/info-bubbles-animations.css">
+  <link rel="stylesheet" href="./styles/examples-animations.css">
+  <link rel="stylesheet" href="./styles/modal-animations.css">
+  <link rel="stylesheet" href="./styles/contact-animations.css">
+  <link rel="stylesheet" href="./styles/footer-animations.css">
+
+  <script defer src="./datas/examples-infos.js"></script>
+  <script src="./scripts/functions.js"></script>
+  <script src="./scripts/events.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script> -->
+</head>
+
+<!-- <script>eruda.init();</script> -->
+
+<body>
+  <header>
+    <div id="header">
+      <a href="#home-link" id="header-title-block" style="display: none;">
+        <img src="./assets/svg/logo.svg" alt="Logo.">
+        <h1>Thomas LÉGER<span style="display: none;"> - Développeur Web Junior (Full Stack)</span></h1>
+      </a>
+      <div id="nav-menu-burger" style="display: none;">
+        <img src="./assets/svg/menu-burger.svg" alt="Menu de navigation.">
+      </div>
+      <nav style="display: none;">
+        <a href="#home-link" class="nav-link-hover" style="display: none;">Accueil</a>
+        <a href="#about-link" class="nav-link-hover">Qui suis-je ?</a>
+        <a href="#skills-link" class="nav-link-hover">Compétences</a>
+        <a href="#examples-link" class="nav-link-hover">Portfolio</a>
+        <a href="#contact-link" class="nav-link-hover">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="home-link" class="anchors">
+  </div>
+  <section id="home" class="slide header-margin-for-tablet-desktop">
+    <img class="background" src="./assets/images/home-background-1440.jpg" srcset="assets/images/home-background-800.jpg 800w,
+             ./assets/images/home-background-1440.jpg 1440w" sizes="(max-width: 800px) 800px, 1440px" alt="Illustration de fond.">
+    <div id="home-content">
+      <h2>Développeur Web Junior (Full&nbsp;Stack)</h2>
+      <p>Passionné par le développement web, j'éprouve une grande satisfaction à concevoir et optimiser des applications. La créativité, la logique
+        et la rigueur qu'exige ce domaine nourrissent ma motivation et me permettent de mener à bien mes missions&nbsp;avec&nbsp;efficacité.</p>
+      <div id="home-buttons">
+        <a style="cursor: default;" id="home-contact-button" href="#contact-link">Contact</a>
+        <a style="cursor: default;" id="home-CV-button" href="./datas/CV-Thomas-LEGER.pdf" download="CV - Thomas LÉGER.pdf">
+          <img src="./assets/svg/download.svg" alt="Icône de téléchargement." aria-hidden="true">
+          <span aria-hidden="true">CV</span>
+          <span class="sr-only">Cliquez pour télécharger mon curriculum vitæ.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <div id="about-link" class="anchors">
+  </div>
+  <section id="about" class="slide">
+    <img class="background" src="./assets/images/about-background-1440.jpg" srcset="assets/images/about-background-800.jpg 800w,
+    ./assets/images/about-background-1440.jpg 1440w" sizes="(max-width: 800px) 800px, 1440px" alt="Illustration de fond.">
+    <div id="about-content">
+      <div id="about-block-photo">
+        <img loading="lazy" src="./assets/images/photo.jpg" alt="Photo profil.">
+      </div>
+      <div id="about-text">
+        <h2>QUI SUIS-JE ?</h2>
+        <div id="about-text-p">
+          <div id="about-p-1">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;En quête d’épanouissement au travail, j'ai choisi de me reconvertir sur OpenClassrooms en tant que développeur web full stack, un métier
+              qui correspond parfaitement à ma personnalité introspective, à mes qualités et à mes motivations.</p>
+          </div>
+          <div id="about-p-2">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Depuis mon enfance, j'ai exercé ma logique à travers les jeux de société et les énigmes.
+              Cette réflexion structurée rend le codage particulièrement stimulant pour moi.
+              Tester et ajuster différentes logiques est un véritable plaisir, et chaque challenge est une occasion de mettre en pratique ma
+              capacité à résoudre des problèmes.</p>
+            <span class="sr-only">Curieux de nature, je suis particulièrement attiré par l'apprentissage continu que permet le développement
+              informatique. Ce domaine en perpétuelle évolution me donne chaque jour l’opportunité de découvrir de nouvelles techniques, langages,
+              frameworks et bibliothèques.
+              Cette soif de connaissances me permet d’améliorer constamment mes compétences et de rester performant dans mon travail.
+            </span>
+            <span class="sr-only">Je suis passionné par la musique assistée par ordinateur, et j'y trouve une grande satisfaction créative.
+              Ce même plaisir, je le retrouve également dans le développement web, où l'acte de concevoir des applications fonctionnelles et esthétiques
+              me procure un sentiment de gratification similaire. Créer quelque chose de concret, que ce soit en musique ou en code, est pour moi une
+              source d'accomplissement personnel.</span>
+          </div>
+          <div id="about-p-3" aria-hidden="true">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Curieux de nature, je suis particulièrement attiré par l'apprentissage continu que permet le développement
+              informatique. Ce domaine en perpétuelle évolution me donne chaque jour l’opportunité de découvrir de nouvelles techniques, langages,
+              frameworks et bibliothèques.
+              Cette soif de connaissances me permet d’améliorer constamment mes compétences et de rester performant dans mon travail.</p>
+          </div>
+          <div id="about-p-4" aria-hidden="true">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Je suis passionné par la musique assistée par ordinateur, et j'y trouve une grande satisfaction créative.
+              Ce même plaisir, je le retrouve également dans le développement web, où l'acte de concevoir des applications fonctionnelles et esthétiques
+              me procure un sentiment de gratification similaire. Créer quelque chose de concret, que ce soit en musique ou en code, est pour moi une
+              source d'accomplissement personnel.</p>
+          </div>
+        </div>
+        <div id="about-text-arrow-down" class="arrow-down" style="display: none;">
+          <img src="./assets/svg/arrow-down.svg" alt="Icône pour le défilement du texte vers le bas." aria-hidden="true">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="skills-link" class="anchors">
+  </div>
+  <section id="skills" class="slide">
+    <img class="background" src="./assets/images/skills-background-1440.jpg" srcset="assets/images/skills-background-800.jpg 800w,
+    ./assets/images/skills-background-1440.jpg 1440w" sizes="(max-width: 800px) 800px, 1440px" alt="Illustration de fond.">
+    <div id="skills-content">
+      <h2 class="slide-title-style">COMPÉTENCES</h2>
+      <div id="skills-trees">
+        <div id="skills-tree-left">
+          <span class="sr-only">Cliquez pour obtenir plus d'informations sur les différentes compétences.</span>
+          <h3>Frontend</h3>
+          <ul>
+            <li>
+              <div class="skills-items-div">
+                <img src="./assets/svg/html.svg" alt="Icône d'HTML." aria-hidden="true">
+                <h4>HTML</h4>
+              </div>
+              <p class="info-bubbles">HTML est le langage standard utilisé pour créer la structure des pages web. Il permet de définir les éléments tels que les titres, paragraphes, images, et liens.</p>
+            </li>
+            <li>
+              <div class="skills-items-div">
+                <img src="./assets/svg/css.svg" alt="Icône de CSS." aria-hidden="true">
+                <h4>CSS</h4>
+              </div>
+              <p class="info-bubbles">CSS est utilisé pour styliser les pages web, en définissant l'apparence des éléments HTML comme les couleurs, polices, espacements, et mises en page.</p>
+            </li>
+            <li>
+              <div class="skills-items-div"><img src="./assets/svg/sass.svg" alt="Icône de SASS." aria-hidden="true">
+                <h4>SASS</h4>
+              </div>
+              <p class="info-bubbles">SASS est une extension de CSS qui ajoute des fonctionnalités avancées comme les variables, fonctions, et mixins pour une gestion plus efficace des styles.</p>
+            </li>
+            <li>
+              <div class="skills-items-div">
+                <img src="./assets/svg/bootstrap.svg" alt="Icône de Bootstrap." aria-hidden="true">
+                <h4>Bootstrap</h4>
+              </div>
+              <p class="info-bubbles">Bootstrap est un framework CSS qui permet de créer rapidement le style et la mise en page des sites.</p>
+            </li>
+            <li>
+              <p class="info-bubbles">JavaScript est un langage de programmation utilisé pour ajouter des fonctionnalités interactives et dynamiques aux sites web, comme les animations ou la validation de formulaires.</p>
+              <div class="skills-items-div"><img src="./assets/svg/javascript.svg" alt="Icône de JavaScript." aria-hidden="true">
+                <h4>JavaScript</h4>
+              </div>
+            </li>
+            <li>
+              <div class="skills-items-div">
+                <img src="./assets/svg/typescript.svg" alt="Icône de TypeScript." aria-hidden="true">
+                <h4>TypeScript</h4>
+              </div>
+              <p class="info-bubbles">TypeScript est un sur-ensemble de JavaScript qui ajoute le typage statique et facilite la maintenance et la robustesse du code.</p>
+            </li>
+            <li>
+              <p class="info-bubbles">React est une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur interactives et réactives grâce à des composants et des hooks.</p>
+              <div class="skills-items-div"><img src="./assets/svg/react.svg" alt="Icône de React." aria-hidden="true">
+                <h4>React</h4>
+              </div>
+            </li>
+            <li>
+              <div class="skills-items-div">
+                <img src="./assets/svg/svelte.svg" alt="Icône de Svelte." aria-hidden="true">
+                <h4>Svelte</h4>
+              </div>
+              <p class="info-bubbles">Svelte est un framework JavaScript moderne qui compile les composants en code optimisé, offrant des performances élevées sans runtime.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="skills-tree-center">
+          <h3>Backend</h3>
+          <ul>
+            <li>
+              <p class="info-bubbles">Node.js est un environnement d'exécution JavaScript côté serveur qui permet de développer des applications web rapides et évolutives.</p>
+              <div class="skills-items-div"><img src="./assets/svg/node-js.svg" alt="Icône de Node.js." aria-hidden="true">
+                <h4>Node.js</h4>
+              </div>
+            </li>
+            <!-- <li>
+              <p class="info-bubbles">C# est un langage de programmation orienté objet, souvent utilisé pour le développement d'applications Windows, web et mobiles grâce à sa compatibilité avec le framework .NET.</p>
+              <div class="skills-items-div"><img src="./assets/svg/c-sharp.svg" alt="Icône de C#." aria-hidden="true">
+                <h4>C#</h4>
+              </div>
+            </li>
+            <li>
+              <p class="info-bubbles">.NET est un framework de développement créé par Microsoft, permettant de construire des applications robustes et performantes pour le web, le bureau, le cloud ou les appareils mobiles.</p>
+              <div class="skills-items-div"><img src="./assets/svg/net.svg" alt="Icône de .NET." aria-hidden="true">
+                <h4>.NET</h4>
+              </div>
+            </li> -->
+            <li>
+              <p class="info-bubbles">Prisma est un ORM (Object-Relational Mapping) moderne pour Node.js, qui simplifie les requêtes vers les bases de données et améliore la productivité des développeurs.</p>
+              <div class="skills-items-div"><img src="./assets/svg/prisma.svg" alt="Icône de Prisma." aria-hidden="true">
+                <h4>Prisma</h4>
+              </div>
+            </li>
+            <li>
+              <div class="skills-items-div">
+                <img src="./assets/svg/postgresql.svg" alt="Icône de PostgreSQL." aria-hidden="true">
+                <h4>PostgreSQL</h4>
+              </div>
+              <p class="info-bubbles">PostgreSQL est un système de gestion de base de données relationnelle puissant et open-source, connu pour sa fiabilité et ses fonctionnalités avancées.</p>
+            </li>
+            <li>
+              <p class="info-bubbles">MongoDB est une base de données NoSQL qui stocke les données sous forme de documents JSON, offrant flexibilité et performance pour les applications modernes.</p>
+              <div class="skills-items-div"><img src="./assets/svg/mongodb.svg" alt="Icône de MongoDB." aria-hidden="true">
+                <h4>MongoDB</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="skills-tree-right">
+          <h3>Outils</h3>
+          <ul>
+            <li>
+              <div class="skills-items-div">
+                <img src="./assets/svg/jest.svg" alt="Icône de Jest." aria-hidden="true">
+                <h4>Jest</h4>
+              </div>
+              <p class="info-bubbles">Jest est un framework de tests JavaScript, utilisé pour tester la logique des applications avec une syntaxe simple et intuitive.</p>
+            </li>
+            <li>
+              <p class="info-bubbles">Nginx est un serveur web performant utilisé pour servir des sites web, gérer les reverse proxies, la charge réseau, ou encore sécuriser les connexions HTTPS.</p>
+              <div class="skills-items-div"><img src="./assets/svg/nginx.svg" alt="Icône de Nginx." aria-hidden="true">
+                <h4>Nginx</h4>
+              </div>
+            </li>
+            <li>
+              <div class="skills-items-div">
+                <img src="./assets/svg/docker.svg" alt="Icône de Docker." aria-hidden="true">
+                <h4>Docker</h4>
+              </div>
+              <p class="info-bubbles">Docker est une plateforme qui permet de créer, déployer et exécuter des applications dans des conteneurs, assurant portabilité et cohérence entre les environnements.</p>
+            </li>
+            <li>
+              <p class="info-bubbles">Postman est un outil utilisé pour tester et documenter les API, permettant de simuler des requêtes et de visualiser les réponses de manière intuitive.</p>
+              <div class="skills-items-div"><img src="./assets/svg/postman.svg" alt="Icône de Postman." aria-hidden="true">
+                <h4>Postman</h4>
+              </div>
+            </li>
+            <li>
+              <p class="info-bubbles">Git est un système de contrôle de version distribué qui permet de suivre les modifications du code et de collaborer efficacement avec d'autres développeurs.</p>
+              <div class="skills-items-div"><img src="./assets/svg/git.svg" alt="Icône de Git." aria-hidden="true">
+                <h4>Git</h4>
+              </div>
+            </li>
+            <li>
+              <p class="info-bubbles">GitHub est une plateforme de gestion de code source et de collaboration, permettant de stocker, partager et gérer des projets Git en ligne.</p>
+              <div class="skills-items-div"><img src="./assets/svg/github-black.svg" alt="Icône de GitHub." aria-hidden="true">
+                <h4>GitHub</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>Animé par la curiosité et la passion, je suis toujours en quête de nouveaux langages, frameworks et bibliothèques pour élargir mes compétences.</p>
+    </div>
+  </section>
+
+  <div id="examples-link" class="anchors">
+  </div>
+  <section id="examples" class="slide">
+    <img class="background" src="./assets/images/examples-background-1440.jpg" srcset="assets/images/examples-background-800.jpg 800w,
+    ./assets/images/examples-background-1440.jpg 1440w" sizes="(max-width: 800px) 800px, 1440px" alt="Illustration de fond.">
+    <div id="examples-content">
+      <h2 class="slide-title-style">PORTFOLIO</h2>
+      <span class="sr-only">Cliquez pour obtenir plus d'informations sur les différents projets.</span>
+
+      <ul id="examples-gallery">
+        <li id="example-1">
+          <div aria-hidden="true">
+            <div class="examples-filters">
+              <img src="./assets/svg/lens.svg" alt="Icône de loupe.">
+              <p>Cliquez pour plus d'informations&nbsp;!</p>
+            </div>
+            <img loading="lazy" class="examples-images" src="./assets/gif/example-1-sm.gif" alt="Image du site.">
+          </div>
+          <h3>Page d'accueil d'une agence de voyage (HTML & CSS)</h3>
+        </li>
+        <li id="example-2">
+          <div aria-hidden="true">
+            <div class="examples-filters">
+              <img src="./assets/svg/lens.svg" alt="Icône de loupe.">
+              <p>Cliquez pour plus d'informations&nbsp;!</p>
+            </div>
+            <img loading="lazy" class="examples-images" src="./assets/gif/example-2-sm.gif" alt="Image du site.">
+          </div>
+          <h3>Portfolio dynamique (JavaScript)</h3>
+        </li>
+        <li id="example-3">
+          <div aria-hidden="true">
+            <div class="examples-filters">
+              <img src="./assets/svg/lens.svg" alt="Icône de loupe.">
+              <p>Cliquez pour plus d'informations&nbsp;!</p>
+            </div>
+            <img loading="lazy" class="examples-images" src="./assets/gif/example-3-sm.gif" alt="Image du site.">
+          </div>
+          <h3>Application web de location immobilière (React)</h3>
+        </li>
+        <li id="example-4">
+          <div aria-hidden="true">
+            <div class="examples-filters">
+              <img src="./assets/svg/lens.svg" alt="Icône de loupe.">
+              <p>Cliquez pour plus d'informations&nbsp;!</p>
+            </div>
+            <img loading="lazy" class="examples-images" src="./assets/gif/example-4-sm.gif" alt="Image du site.">
+          </div>
+          <h3>Back-end d'un site de notation de livres (Node.js & MongoDB)</h3>
+        </li>
+        <li id="example-5">
+          <div aria-hidden="true">
+            <div class="examples-filters">
+              <img src="./assets/svg/lens.svg" alt="Icône de loupe.">
+              <p>Cliquez pour plus d'informations&nbsp;!</p>
+            </div>
+            <img loading="lazy" class="examples-images" src="./assets/gif/example-5-sm.gif" alt="Image du site.">
+          </div>
+          <h3>Optimisation et débogage d'un portfolio de photographe</h3>
+        </li>
+      </ul>
+
+      <div id="modal-screen">
+        <img id="modal-previous-button" src="./assets/svg/next.svg" alt="Bouton projet précédent.">
+        <div id="modal">
+          <div id="modal-header">
+            <h3 id="modal-title" role="presentation">Titre</h3>
+            <img id="modal-close-icon" src="./assets/svg/close.svg" alt="Bouton pour la fermeture de fenêtre modale.">
+          </div>
+          <div id="modal-image-section">
+            <div id="image-images-slider" aria-hidden="true">
+              <img id="modal-image-A" src="./assets/gif/example-1.gif" alt="Image du projet.">
+              <img loading="lazy" id="modal-image-B" class="modal-slide-B-start-position" src="./assets/gif/example-1.gif" alt="Image du projet.">
+            </div>
+            <div id="modal-buttons-section">
+              <button id="modal-description-button" class="modal-button-active">
+                <span class="sr-only">Bouton pour afficher la description du projet.</span>
+                <span class="modal-buttons-text" aria-hidden="true">Description</span>
+                <img class="modal-buttons-images" src="./assets/svg/description-white.svg" alt="Bouton pour afficher la description du projet." aria-hidden="true">
+              </button>
+              <button id="modal-challenges-button" class="modal-button-hover" aria-label="Bouton pour afficher les challenges rencontrés au cours du projet.">
+                <span class="sr-only">Bouton pour afficher les challenges rencontrés au cours du projet.</span>
+                <span class="modal-buttons-text" aria-hidden="true">Challenges</span>
+                <img class="modal-buttons-images" src="./assets/svg/exclamation-mark-white.svg" alt="Bouton pour afficher les challenges rencontrés au cours du projet." aria-hidden="true">
+              </button>
+              <button id="modal-skills-button" class="modal-button-hover" aria-label="Bouton pour afficher les compétences acquises au cours du projet.">
+                <span class="sr-only">Bouton pour afficher les compétences acquises au cours du projet.</span>
+                <span class="modal-buttons-text" aria-hidden="true">Compétences</span>
+                <img class="modal-buttons-images" src="./assets/svg/cog-white.svg" alt="Bouton pour afficher les compétences acquises au cours du projet." aria-hidden="true">
+              </button>
+            </div>
+          </div>
+          <div id="modal-text-block">
+            <div id="modal-text">
+              <h4 id="modal-text-title" role="presentation">Description :</h4>
+            </div>
+            <div id="modal-text-arrow-down" class="arrow-down" style="display: none;" aria-hidden="true">
+              <img src="./assets/svg/arrow-down.svg" alt="Faites défiler vers le bas pour voir plus de texte.">
+            </div>
+          </div>
+          <a id="modal-link" href="#" target="_blank">
+            <span class="sr-only">Lien Github du projet.</span>
+            <div aria-hidden="true">
+              <span>Lien du projet : </span>&nbsp;GitHub
+            </div>
+          </a>
+        </div>
+        <img id="modal-next-button" src="./assets/svg/next.svg" alt="Bouton projet suivant.">
+        <span class="sr-only">Continuer pour passer à la section suivante.</span>
+      </div>
+    </div>
+  </section>
+
+  <div id="contact-link" class="anchors">
+  </div>
+  <section id="contact" class="slide footer-margin-for-tablet-desktop">
+    <img class="background" src="./assets/images/contact-background-1440.jpg" srcset="assets/images/contact-background-800.jpg 800w,
+    ./assets/images/contact-background-1440.jpg 1440w" sizes="(max-width: 800px) 800px, 1440px" alt="Illustration de fond.">
+    <div id="contact-content">
+      <h2 class="slide-title-style">CONTACT</h2>
+      <form id="contact-form">
+        <div id="contact-form-inputs">
+          <div id="contact-full-name">
+            <div class="contact-name-sections">
+              <label for="contact-given-name">Prénom :</label>
+              <input type="text" id="contact-given-name" name="given-name" autocomplete="given-name" required maxlength="50">
+            </div>
+            <div class="contact-name-sections">
+
+              <label for="contact-family-name">Nom :</label>
+              <input type="text" id="contact-family-name" name="family-name" autocomplete="family-name" required maxlength="50">
+            </div>
+          </div>
+          <label for="contact-email">Email :</label>
+          <input type="email" id="contact-email" name="email" autocomplete="email" required maxlength="254">
+          <label for="contact-phone-number" class="contact-phone-number">Téléphone :</label>
+          <input type="text" id="contact-phone-number" name="phone-number" pattern="[0-9\-\s\(\)]+" autocomplete="off" maxlength="20">
+          <label for="contact-subject">Sujet :</label>
+          <input type="text" id="contact-subject" name="subject" required maxlength="100">
+          <label for="contact-message">Votre message :</label>
+          <textarea id="contact-message" name="message" required maxlength="1000"></textarea>
+        </div>
+        <div id="submit-block">
+          <!-- <div id="contact-errors-form" style="display: none;"> -->
+          <div id="contact-errors-form" style="display: flex;">
+            <img src="./assets/svg/warning.svg" alt="Icône vigilant.">
+            <!-- <p id="contact-errors-form-text">Un ou plusieurs champs dépassent la longueur maximale autorisée de caractères.</p> -->
+            <p id="contact-errors-form-text">Le formulaire ne fonctionne plus car je ne paie plus pour le backend.</p>
+          </div>
+          <div id="contact-success-form" style="display: none;">
+            <img src="./assets/svg/mail-send.svg" alt="Icône vigilant.">
+            <p id="contact-success-form-text">Merci, votre message a été envoyé avec succès.</p>
+          </div>
+          <button type="submit">Envoyez votre message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div id="small-mobile-screen-message" style="display: none;">
+    <p>La hauteur de votre fenêtre de navigateur est trop petite pour afficher correctement ce site.
+      Veuillez basculer en mode vertical, dézoomer ou agrandir la fenêtre.</p>
+  </div>
+  <footer>
+    <div id="footer">
+      <div style="display: none;">
+        <a href="https://www.linkedin.com/in/thomas-léger-834b97334" target="_blank" title="Lien vers mon LinkedIn.">
+          <img src="./assets/svg/linkedin.svg" alt="Icône d'un LinkedIN." aria-hidden="true">
+          <span class="sr-only">Lien vers mon LinkedIn.</span>
+        </a>
+        <a href="https://github.com/ThomasL7?tab=repositories" target="_blank" title="Lien vers mon GitHub.">
+          <img src="./assets/svg/github-white.svg" alt="Icône de GitHub." aria-hidden="true">
+          <span class="sr-only">Lien vers mon GitHub.</span>
+        </a>
+        <a href="mailto:t.leger.contact@gmail.com" target="_blank" title="Envoyer un e-mail via votre messagerie par default.">
+          <img src="./assets/svg/e-mail.svg" alt="Icône d'un e-mail." aria-hidden="true">
+          <span class="sr-only">Cliquez pour m'envoyer un e-mail via votre messagerie par default.</span>
+        </a>
+        <a href="./datas/CV-Thomas-LEGER.pdf" download="CV - Thomas LÉGER.pdf" title="Cliquez pour télécharger mon Curriculum Vitæ.">
+          <img src="./assets/svg/cv.svg" alt="Icône d'un CV." aria-hidden="true">
+          <span class="sr-only">Cliquez pour télécharger mon CV.</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

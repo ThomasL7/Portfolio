@@ -1,0 +1,62 @@
+.header-margin-for-tablet-desktop {
+  margin-top: var(--header-height-normal);
+}
+
+#home-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px var(--slide-side-margin);
+  position: absolute;
+  text-align: center;
+  width: 800px;
+}
+
+#home h2 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.175;
+}
+
+#home p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+#home-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#home-buttons a {
+  align-items: center;
+  background: radial-gradient(ellipse at center, #df5050 0%, #e63838 100%);
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  height: 34px;
+  justify-content: center;
+  width: 120px;
+}
+
+#home-contact-button {
+  margin-right: 24px;
+}
+
+#home-CV-button {
+  position: relative;
+}
+
+#home-CV-button img {
+  height: 16px;
+  margin-right: 8px;
+  position: relative;
+  top: -1px;
+  width: 20px;
+}
